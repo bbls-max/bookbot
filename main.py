@@ -1,11 +1,11 @@
 def main():
-    book_path = "books/frankenstein.txt"
-    text = get_book_text(book_path)
-    num_words = get_num_words(text)
-    chars_dict = get_chars_dict(text)
+    path = "books/frankenstein.txt"
+    book_text = get_book_text(path)
+    num_words = get_num_words(book_text)
+    chars_dict = get_chars_dict(book_text)
     chars_sorted_list = chars_dict_to_sorted_list(chars_dict)
 
-    print(f"--- Begin report of {book_path} ---")
+    print(f"--- Begin report of {path} ---")
     print(f"{num_words} words found in the document")
     print()
 
